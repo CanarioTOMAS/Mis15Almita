@@ -123,6 +123,11 @@ export default function Home() {
           Adultos - $25.000<br></br> Adolescentes(14 a 16) - $16.000 <br></br>
           Niños(3 a 13) - $7.500 <br></br>Menores de 3 no pagan
         </Typography>
+        <Typography variant="h6" sx={{fontFamily:'Mate',color:'grey'}}>
+          Abonar al siguiente alias:
+<br></br>
+ale.moreno81
+        </Typography>
         <Button href="https://forms.gle/utRPutzkzEgH6gtX8" sx={{ bgcolor: "black", color: "white", borderRadius: 60 ,width:'60%'}}>Confirmar</Button>
       </Box>
       <MusicPlayer></MusicPlayer>
