@@ -8,7 +8,7 @@ export const Header = () => {
       component="section"
       sx={{
         p: 2,
-        height: 350,
+        height: 800,
         backgroundImage: `url(${Image.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -16,7 +16,9 @@ export const Header = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        position: 'relative', // Asegúrate de que el Box sea el contenedor relativo
+        position: 'relative',
+          maskImage:
+            "linear-gradient(to bottom, transparent, black 15%, black 85% ,transparent )",
         '&::before': {
           content: '""',
           position: 'absolute',
@@ -43,8 +45,7 @@ export const Header = () => {
             fontWeight: 'bold',
           }}
         >
-          MIS 15 ALMA
-        </Typography>
+Lola <br></br> & <br></br> Nico        </Typography>
       </Container>
     </Box>
   );

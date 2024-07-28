@@ -10,7 +10,7 @@ import FormAssist from "./components/formAsistencia";
 import GiftBox from "./components/exampleGift";
 import Box from "@mui/material/Box";
 import ImagenAlma from "../public/Imagen2-Alma.jpeg";
-import ImagenAlma2 from "../public/Imagen3-Alma.jpeg"
+import ImagenAlma2 from "../public/Imagen3-Alma.jpeg";
 import {
   Card,
   CardContent,
@@ -22,10 +22,13 @@ import {
 
 export default function Home() {
   return (
-    <div className="bg-[url('../public/fondo21.jpg')] bg-contain ">
+    <div className="">
       <Header></Header>
+      <Timer
+        initialTime={new Date("2024-08-17T18:00:00-03:00").getTime()}
+      ></Timer>
       <Welcome></Welcome>
-      <Timer initialTime={new Date("2024-07-20T21:00:00").getTime()}></Timer>
+
       <Box
         sx={{
           width: "100%",
@@ -51,49 +54,7 @@ export default function Home() {
         color={"white"}
       >
         <Grid item xs={12} md={4} p={6}>
-          <Dresscode></Dresscode>
-        </Grid>
-        <Grid item xs={12} md={4} p={6}>
           <Location></Location>
-        </Grid>
-        <Grid item xs={12} md={4} p={6}>
-          <Card
-            sx={{
-              // background: "radial-gradient(circle, #eeeeee 0%, #d7d7d7 100%)",
-              boxShadow: "10px 10px 5px 0px rgba(217,217,217,0.5)",
-              borderRadius: "20px",
-            }}
-            className="bg-[url('../public/13.png')] bg-cover"
-          >
-            <CardContent sx={{ textAlign: "center" }}>
-              <Typography
-                variant="h4"
-                sx={{
-                  textAlign: "center",
-                  fontFamily: "Mate",
-                  color: "black",
-                  fontWeight: 700,
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="2.5em"
-                  height="2.5sem"
-                  style={{ margin: "auto" }}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M7.5 21.5v-9.034q-1.16-.177-1.965-1.064q-.804-.886-.804-2.171V2.5h1v6.73H7.5V2.5h1v6.73h1.77V2.5h1v6.73q0 1.286-.805 2.172q-.806.887-1.965 1.064V21.5zm9.23 0v-8h-2.46V7q0-1.671.942-2.96q.944-1.29 2.519-1.501V21.5z"
-                  />
-                </svg>
-                MENÚ
-              </Typography>
-              <Typography variant="h6" fontFamily={"Libre Baskerville"}>
-                Recordá, si tenes algun problema alimentición hacemelo saber cuando confirmes asistencia
-              </Typography>
-            </CardContent>
-          </Card>
         </Grid>
       </Grid>
       <Box
@@ -114,16 +75,28 @@ export default function Home() {
           }}
         />
       </Box>
-      <GiftComponent></GiftComponent>
-      <Box sx={{p:6, pb:10,width: "100%",
+      <Box
+        sx={{
+          p: 6,
+          pb: 10,
+          width: "100%",
           justifyContent: "center",
-          alignItems: "center",textAlign:'center'}}>
-        <Typography variant="h3" sx={{textAlign:"center", fontFamily:"Libre Baskerville",color:'black',fontWeight:900}} >CONFIRMAR ASISTENCIA</Typography>
-        <Typography variant="h5" sx={{fontFamily:'Mate'}}>
-          Adultos - $25.000<br></br> Adolescentes(14 a 16) - $16.000 <br></br>
-          Niños(3 a 13) - $7.500 <br></br>Menores de 3 no pagan
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <Typography
+          variant="h5"
+          sx={{
+            textAlign: "center",
+            fontFamily: "Libre Baskerville",
+            color: "black",
+            fontWeight: 900,
+          }}
+        >
+          CONFIRMAR ASISTENCIA ANTES DEL 10/08
         </Typography>
-        <Button href="https://forms.gle/utRPutzkzEgH6gtX8" sx={{ bgcolor: "black", color: "white", borderRadius: 60 ,width:'60%'}}>Confirmar</Button>
+        <Button sx={{color:'#000000',bgcolor:'#ffffff'}} href="https://wa.me/543571311480?text=%C2%A1Hola!%F0%9F%91%8B*%20Confirmamos%20asistencia*:%0A%0APara%20compartir%20y%20festejar%20el%20cumple%20de%20Lola%20&%20Nico%F0%9F%8E%8A%F0%9F%8E%8A"> Confirmar asistencia </Button>
       </Box>
       <MusicPlayer></MusicPlayer>
     </div>

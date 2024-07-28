@@ -15,7 +15,10 @@ export const Location = () => {
         boxShadow: "10px 10px 5px 0px rgba(217,217,217,0.5)",
         borderRadius: "20px",
       }}
-      className="bg-[url('../public/13.png')] bg-cover"
+      style={{
+        backgroundColor:'#e8e8e8'
+      }}
+      className="bg-cover"
     >
       <CardContent sx={{ textAlign: "center" }}>
         <Typography
@@ -42,17 +45,14 @@ export const Location = () => {
           UBICACÍON
         </Typography>
         <Typography variant="h4" fontFamily={"Libre Baskerville"}>
-          Salón Elegantes
-        </Typography>
-        <Typography variant="h6" fontFamily={"Libre Baskerville"}>
-          Juan Domingo Perón 542, Río Tercero
+          Quincho Monet
         </Typography>
       </CardContent>
       <CardActions sx={{ textAlign: "center", m: "auto" }}>
         <Button
           sx={{ bgcolor: "black", color: "white", borderRadius: 60 }}
           fullWidth
-          href="https://www.google.com/maps/dir//Pres.+Juan+Domingo+Per%C3%B3n+542,+R%C3%ADo+Tercero,+C%C3%B3rdoba/@-32.1616128,-64.1953845,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95cd6f32b36c0191:0xafbad8a8d350358e!2m2!1d-64.1130126!2d-32.1616067?entry=ttu"
+          href="https://www.google.com/maps/place/Salon+monet/@-32.4413787,-63.2436601,15z/data=!4m6!3m5!1s0x95cc43a9d56a69a5:0x2d22eeb7efbff2fa!8m2!3d-32.4413778!4d-63.2375987!16s%2Fg%2F11bw8m2yg6?entry=ttu"
         >
           ¿Cómo llegar?
         </Button>

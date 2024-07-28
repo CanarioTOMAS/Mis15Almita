@@ -43,7 +43,7 @@ export const Timer = ({ initialTime }: { initialTime: number }) => {
       component="section"
       sx={{
         p: 2,
-        height: 350,
+        height: 250,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
