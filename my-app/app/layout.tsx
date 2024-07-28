@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mis 15 - ALMA",
-  description: "20 de Julio de 2024",
+  title: "Nico & Lola",
+  description: "17 de Agosto de 2024",
 };
 
 export default function RootLayout({
