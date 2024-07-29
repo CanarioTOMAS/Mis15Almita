@@ -96,7 +96,7 @@ export default function Home() {
         >
           CONFIRMAR ASISTENCIA ANTES DEL 10/08
         </Typography>
-        <Button sx={{color:'#000000',bgcolor:'#ffffff'}} href="https://wa.me/543571311480?text=%C2%A1Hola!%F0%9F%91%8B*%20Confirmamos%20asistencia*:%0A%0APara%20compartir%20y%20festejar%20el%20cumple%20de%20Lola%20&%20Nico%F0%9F%8E%8A%F0%9F%8E%8A"> Confirmar asistencia </Button>
+        <Button sx={{color:'#000000',bgcolor:'#ffffff'}} href="https://wa.me/543571311480?text=%C2%A1Hola!%F0%9F%91%8B*%20Confirmamos%20asistencia*:%0A%0APara%20festejar%20el%20cumple%20de%20Lola%20y%20Nico%F0%9F%8E%8A%F0%9F%8E%8A"> Confirmar asistencia </Button>
       </Box>
       <MusicPlayer></MusicPlayer>
     </div>
